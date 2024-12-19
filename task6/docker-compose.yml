@@ -15,14 +15,6 @@ services:
     expose:
       - "5252"
 
-  back-end2:
-    build:
-      context: .
-      dockerfile: back-end/Dockerfile
-    image: softy-pinko-back-end:task6
-    expose:
-      - "5252"
-
   proxy:
     build:
       context: ./proxy
